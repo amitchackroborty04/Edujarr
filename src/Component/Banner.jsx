@@ -114,7 +114,7 @@ import b3 from "../assets/b3.png";
 
 const Banner = () => {
   return (
-    <section className="bg-[url('./assets/bannerbg.png')] bg-cover bg-center pt-10 relative ">
+    <section className="bg-[url('./assets/bannerbg.png')] bg-cover bg-center pt-10 relative overflow-y-hidden ">
       <Container>
         <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-10">
           {/* Left Content */}
