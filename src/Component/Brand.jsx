@@ -10,7 +10,7 @@ import brand6 from "../assets/brand6.png";
 
 const Brand = () => {
   return (
-    <section className="bg-[url('./assets/barndbg.png')]">
+    <section className="bg-[url('./assets/barndbg.png')] ">
       <Container>
         <div className="flex flex-wrap lg:flex-nowrap gap-y-3 justify-between items-center py-5 lg:py-[50px]">
           <div className="w-[27%] lg:w-[16%]">

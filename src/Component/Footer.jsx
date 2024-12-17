@@ -56,7 +56,7 @@ const Footer = () => {
                   </span>
                   <FoterText text="(209) 555-0104" />
                 </div>
-                <div className="flex justify-center  items-center gap-x-3 mt-6">
+                <div className="flex justify-center lg:justify-start  items-center gap-x-3 mt-6">
                   <span>
                     <MdOutlineMailOutline className="text-2xl text-white " />
                   </span>
