@@ -15,7 +15,7 @@ import Image from "./Image";
 
 const Featured_Course = () => {
   return (
-    <section className="bg-[url('./assets/FBg.png')] relative  ">
+    <section className="bg-[url('./assets/FBg.png')] bg-cover relative  ">
       {/* <div className="w-full h-screen absolute top-0 left-0 bg-[#F0F3FF] bg-opacity-60"></div> */}
       <Container>
         <div className="flex justify-center pt-[117px]">

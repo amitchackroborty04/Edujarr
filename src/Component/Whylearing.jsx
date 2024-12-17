@@ -9,6 +9,7 @@ import RA2 from "../assets/RA2.png";
 import RA3 from "../assets/RA3.png";
 import RAbg from "../assets/RAbg.png";
 import icon1 from "../assets/icon1.png";
+import line from "../assets/afterimage.png";
 
 const Whylearing = () => {
   return (
@@ -28,27 +29,30 @@ const Whylearing = () => {
           <div className=" absolute top-[123px] left-[-50px]">
             <Image src={RA3} />
           </div>
-          <div className=" flex justify-center ">
+          <div className="text-center ">
             <Title
               title="Why learn with"
               span="our courses ?"
               textcolor="text-white"
             />
           </div>
-          <div className="flex justify-center mt-7">
+          <div className="w-full flex justify-center mt-7">
             <Sub_title
               textcolor="text-white"
               subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporidunt ut labore veniam..."
             />
           </div>
-          <div className="flex flex-wrap lg:flex-nowrap gap-y-4 justify-between mt-[118px]">
-            <div className="w-full lg:w-[30%] border-none  lg:border-r lg:border-dashed pr-10 	">
+          <div className="flex flex-wrap lg:flex-nowrap gap-y-7 justify-between mt-[118px]">
+            <div className="w-full lg:w-[30%] relative 	">
               <Minicard imgsrc={icon1} title=" 01. Learn" />
+
+              <Image className="hidden lg:block absolute top-0 right-[-50px]" src={line} />
             </div>
-            <div className="w-full lg:w-[30%]">
-              <Minicard  imgsrc={icon1} title=" 01. Learn"/>
+            <div className="w-full lg:w-[30%] relative">
+              <Minicard imgsrc={icon1} title=" 01. Learn" />
+              <Image className="hidden lg:block absolute top-0 right-[-50px]" src={line} />
             </div>
-            <div className="w-full lg:w-[30%] boder-none lg:border-l lg:border-dashed pl-10">
+            <div className="w-full lg:w-[30%] ">
               <Minicard imgsrc={icon1} title=" 01. Learn" />
             </div>
           </div>

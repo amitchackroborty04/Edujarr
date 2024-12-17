@@ -8,29 +8,21 @@ import { CiSearch } from "react-icons/ci";
 import { AiOutlineMenuFold } from "react-icons/ai";
 import { RxCrossCircled } from "react-icons/rx";
 const Navbar = () => {
-  let [menu, setmenu] = useState(false);
+  let [menu,setmenu]=useState(false)
 
   let handlemenu = () => {
-    setmenu(!menu);
-  };
+     setmenu(!menu)
+  }
 
   return (
     <Container>
-      <nav className=" py-5 lg:py-7 bg-white relative   ">
+      <nav className=" py-5 lg:py-7 bg-white relative  ">
         <div className="flex  justify-between items-center">
           <div className="w-[40%]lg:w-[15%]">
-            <Image
-              className="w-[400px] lg:w-auto bg-cover"
-              src={logo}
-              alt="logo"
-            />
+            <Image className="w-[400px] lg:w-auto bg-cover" src={logo} alt="logo" />
           </div>
           <div className=" w-[40%]  ">
-            <ul
-              className={` z-50 flex flex-col lg:flex-row absolute top-0 ${
-                menu ? "right-[-20px]" : "right-[-100%]"
-              } duration-500  lg:static    pl-10 lg:pl-0 pt-10 lg:pt-0  gap-y-5 lg:justify-between bg-[#FFFFFF] lg:bg-transparent h-screen lg:h-auto w-[80%] lg:w-auto cursor-pointer`}
-            >
+            <ul className={`z-50 flex flex-col lg:flex-row absolute top-5 ${menu ? "left-[-20px]" : "left-[-90%]"} duration-500  lg:static    pl-10 lg:pl-0 pt-10 lg:pt-0  gap-y-5 lg:justify-between bg-[#FFFFFF] lg:bg-transparent h-screen lg:h-auto w-[80%] lg:w-auto cursor-pointer`}>
               <li className="font-Saira text-xl font-medium leading-6 text-[#1B2336] hover:text-[#2AAA94] duration-300">
                 Home
               </li>
@@ -50,10 +42,7 @@ const Navbar = () => {
                 Events
               </li>
               <span className="block lg:hidden absolute top-5 right-4">
-                <RxCrossCircled
-                  onClick={() => setmenu(false)}
-                  className="text-2xl text-red-500"
-                />
+              <RxCrossCircled onClick={()=>setmenu(false)} className="text-2xl text-red-500" />
               </span>
             </ul>
           </div>
@@ -81,7 +70,7 @@ const Navbar = () => {
             </div>
           </div>
           <span className="block lg:hidden">
-            <AiOutlineMenuFold onClick={handlemenu} className="text-2xl" />
+          <AiOutlineMenuFold onClick={handlemenu} className="text-2xl"/>
           </span>
         </div>
       </nav>

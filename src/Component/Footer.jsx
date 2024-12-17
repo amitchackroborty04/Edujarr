@@ -13,7 +13,7 @@ import { RiDribbbleLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <footer className='bg-[url("./assets/footerbg.png")] pt-16 lg:pt-[118px]  '>
+    <footer className='bg-[url("./assets/footerbg.png")] bg-cover pt-16 lg:pt-[118px]  '>
       <Container>
         <div className="flex flex-col lg:flex-row flex-wrap lg:flex-nowrap gap-y-10 justify-between  border-b pb-12 lg:pb-[90px] ">
           <div className="w-full lg:w-[30%]">
